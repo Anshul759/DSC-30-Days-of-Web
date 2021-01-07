@@ -1,0 +1,137 @@
+@font-face{
+    font-family: 'Cormorant Upright', serif;
+    font-family: 'Monoton', cursive;
+    font-family: 'Saira Condensed', sans-serif;
+}
+.grid-container
+{
+    background-image: linear-gradient(honeydew,white,grey);
+    display: grid;
+    grid-template-areas: 
+    'header1 header1 header2'
+    'profile profile profile '
+    'education education skills'
+    'inspiration inspiration certificate';
+    margin: 20px;
+    box-shadow: 5px 5px 8px 1px black;
+    border: 0.1px solid grey;
+}
+.grid-item
+{
+    margin: 5px;
+    padding: 20px;
+    font-family: 'Cormorant Upright', serif;
+}
+body{
+    background-image: linear-gradient(honeydew,grey,white);
+}
+
+#header1
+{
+    grid-area: header1;
+    font-size: x-large;
+    font-weight: bold;
+
+}
+#header2
+{
+    grid-area: header2;
+    direction: rtl;
+    font-weight: lighter;
+    font-size: large;
+}
+#profile
+{
+    grid-area: profile;
+    font-size: 20px;
+    font-weight: bold;
+}
+#education
+{
+    grid-area: education;
+}
+#skill
+{
+    grid-area: skills;
+    display: inline-block;
+
+}
+#inspiratiion
+{
+    grid-area: inspiration;
+    justify-content: space-around;
+    display: inline-block;
+}
+#certificate
+{
+    grid-area: certificate;
+    font-size: large;
+    font-style: oblique;
+}
+
+form{
+    font-family: 'Saira Condensed', sans-serif;
+    text-align: center;
+}
+hr{
+    border: 1px solid black;
+    margin-bottom: 20px;
+    margin-top: 1px;
+}
+img
+{
+    vertical-align: middle;
+    
+}
+li.block{
+    background-color: cornflowerblue;
+    color:cornsilk;
+    margin: 5px;
+    display: inline-block;
+    padding: 8px;
+}
+
+input[type=text],input[type=email],textarea{
+    width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px 15px;
+    background-color:yellowgreen;
+    color:white;
+    border: 1px solid blanchedalmond;
+    height: 30px;
+    size: 30;
+}
+input[type=submit]{
+    background-color:lightsteelblue;
+    color:black;
+    padding: 10px 15px;
+    margin: 5px 6px;
+    cursor:pointer;
+    border: none;
+    border-radius: 6px;
+    height: 30px;
+    width: 1000px;
+    text-align: center;
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+fieldset{
+    border:2px solid goldenrod;
+    padding: 10px 20px;
+}
+a:link,a:visited{
+    text-decoration: none;   
+}
+h1{
+    font-family: none;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 2px;
+}
+::placeholder{
+    color:white;
+    font-style: oblique;
+}
+
